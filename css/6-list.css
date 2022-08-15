@@ -1,0 +1,56 @@
+/* 
+CSS 列表属性作用如下：
+  1.设置不同的列表项标记为有序列表。
+  2.设置不同的列表项标记为无序列表。
+  3.设置列表项标记为图像。
+
+  list-style	        简写属性。用于把所有用于列表的属性设置于一个声明中
+  list-style-image	  将图像设置为列表项标志。
+  list-style-position	设置列表中列表项标志的位置。
+  list-style-type	    设置列表项标志的类型。
+*/
+
+/* 
+1.不同的列表项标记
+list-style-type属性指定列表项标记的类型是：
+*/
+ul.a {
+  list-style-type: circle;
+}
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+/* 
+2.作为列表项标记的图像
+要指定列表项标记的图像，使用列表样式图像属性：
+*/
+ul {
+  list-style-image: url("sqpurple.gif");
+}
+
+/* 
+3.列表 - 简写属性
+在单个属性中可以指定所有的列表属性。这就是所谓的简写属性。
+为列表使用简写属性，列表样式属性设置如下： 
+*/
+ul {
+  list-style: square url("sqpurple.gif");
+}
+
+/* 
+4.移除默认设置
+list-style-type:none 属性可以用于移除小标记。默认情况下列表 <ul> 或 <ol> 还设置了内边距和外边距，可使用 margin:0 和 padding:0 来移除:
+ */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

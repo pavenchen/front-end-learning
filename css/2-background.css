@@ -1,0 +1,37 @@
+/* CSS 属性定义背景效果:
+  1.background-color 背景色 */
+body {
+  background-color: #b0c4de;
+}
+
+/* 2.background-image 背景图 */
+body {
+  background-image: url("img_tree.png");
+}
+
+/* 3.background-repeat 平铺设置 */
+body {
+  background-image: url("img_tree.png");
+  background-repeat: repeat-x;
+}
+/* 只在水平方向平铺 (repeat-x)。 */
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+/* 不想让图像平铺（no-repeat）。 */
+
+/* 4.background-attachment 背景图像是否固定或者随着页面的其余部分滚动。 */
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* 5.background-position 图像在背景位置。 */
+
+/* 简写： */
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
